@@ -1,0 +1,145 @@
+#contact {
+  box-sizing: border-box;
+  padding: 100px 60px 100px 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  h1 {
+    color: $light-main;
+    font-size: 44px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0 50px 0;
+    // width: 1 00%;
+    .inline {
+      width: 100%;
+      input {
+        max-width: 100%;
+      }
+    }
+    input, textarea, {
+      margin-bottom: 20px;
+      padding: 10px;
+      // width: 100%;
+      border: 2px solid $dark-main;
+      &::placeholder {
+        font-family: $font-main;
+        color: $dark-main;
+        letter-spacing: 2px;
+        font-weight: 300;
+      }
+    }
+  }
+      .btn-default {
+        color: $dark-main;
+        padding: 10px 15px 10px 15px;
+      }
+}
+    #info{
+      background-color: $light-main;
+      padding: 100px 20px 100px 20px;
+      display: flex;
+      flex-direction: column;
+      .single-info {
+        text-align: center;
+        margin-bottom: 75px;
+        .box {
+          text-align: center;
+          display: inline-block;
+          background-color: $dark-main;
+          padding: 10px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media all and (min-width: 461px) { 
+      #contact {
+        h1,p {
+          padding-left: 10%;
+        }
+        .container {
+          form {
+            width: 70%;
+            .inline {
+              display: flex;
+              flex-direction: row; 
+              box-sizing: border-box;
+              input {
+                width: 80%;
+              }
+              input:first-child {
+                margin-right: 15px;
+              }
+          }
+        }
+        }
+    }
+  }
+  @media all and (min-width: 1300px) { 
+    #contact {
+      .container {
+        form {
+          width: 50%;
+        }
+      }
+  }
+}
+  
+  @media all and (max-width: 460px) { 
+    #contact {
+      .container {
+        form {
+          .inline {
+            input {
+              min-width: 90.5%;
+            }
+        }
+      }
+      }
+  }
+  }
+
+  @media all and (max-width: 696px) { 
+  #contact {
+  padding: 100px 60px 100px 60px;
+    h1,p {
+      padding-left: 0;
+    }
+    }
+  }
+
+
+
+  @media all and (min-width: 768px) { 
+    #info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .single-info {
+        width: 50%;
+        height: 100px;
+        // margin-right: 100px;
+      }
+    }
+  }

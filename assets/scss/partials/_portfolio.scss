@@ -1,0 +1,85 @@
+#portfolio {
+  padding: 0;
+  .head {
+      margin-top: 50px;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        color: $light-main;
+        font-size: 44px;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        color: $dark-main;
+        padding: 10px;
+      }
+    }
+      .buttons {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        .btn-default {
+          margin: 5px;
+          color: $dark-main;
+          padding: 9px;
+          border-radius: 0;
+        }
+      }
+
+      .more-projects {
+        width: 100%;
+        padding: 50px 0 150px 0;
+        display: flex;
+        justify-content: center;
+        .btn-default {
+          color: $dark-main;
+          padding: 19px 70px 19px 70px;
+          width: auto;
+        }
+      }
+    }
+
+@media all and (min-width: 500px) { 
+#portfolio {
+  .head {
+    padding: 50px 70px 50px 70px;
+  }
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    .btn-default {
+      max-width: 300px;
+    }
+  }
+}
+}
+@media all and (min-width: 500px) and (min-width: 874px)  {
+
+}
+@media all and (min-width: 675px)  { 
+  #portfolio {
+    .head {
+      padding: 50px 140px 50px 140px;
+    }
+  }
+
+}
+
+@media all and (min-width: 1300px)  { 
+  #portfolio {
+    .head {
+      padding: 50px 240px 50px 240px;
+    }
+  }
+}
+@media all and (min-width: 1800px)  { 
+  #portfolio {
+    .head {
+      padding: 50px 440px 50px 440px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+#clients {
+  background-color: $dark-main;
+  padding: 100px 50px 100px 50px;
+  h1 {
+    font-size: 45px;
+    color: $light-main;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  p {
+    color: #fff;
+  }
+  .slider {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .slide {
+      padding: 20px;
+    }
+  }
+  
+}
+
+@media all and (min-width: 736px) { 
+  #clients {
+    h1, p {
+      margin-left: 16%;
+      width: 70%;
+    }
+    .slider {
+      flex-direction: row;
+      .slide {
+        img {
+          padding: 10px 10px 0 10px;
+          height: 30px;
+        }
+      }
+    }
+  }
+ }
+ @media all and (min-width: 980px) { 
+   #clients {
+     .slider {
+       .slide {
+         img {
+          height: 100%;
+          padding: 10px 20px 0 20px;
+        }
+      }
+    }
+  }
+  }
+

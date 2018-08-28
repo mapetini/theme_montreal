@@ -1,0 +1,18 @@
+@import './utils/_variables.scss';
+@import './partials/_btn-default.scss';
+@import './partials/_header.scss';
+@import './partials/_services.scss';
+@import './partials/_stats.scss';
+@import './partials/_portfolio.scss';
+@import './partials/_clients.scss';
+@import './partials/_contact.scss';
+@import './partials/_footer.scss';
+@import './partials/_thumbnails.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+
+}
